@@ -1,40 +1,33 @@
 //
 // NowPlaying.m
-// Now Playing Cordova Plugin
-//
-// Created by François LASSERRE on 12/05/13.
-// Copyright 2013 François LASSERRE. All rights reserved.
-// MIT Licensed
+// Now Playing Cordova Plugin Version 2
+// Created by Koiwu Beyan on 11/14/2013.
 //
 
 #import "NowPlaying.h"
 #import <MediaPlayer/MediaPlayer.h>
+#import <MediaPlayer/MPNowPlayingInfoCenter.h>
+#import <MediaPlayer/MPMediaItem.h>
+#import <AVFoundation/AVFoundation.h>
 
 @implementation NowPlaying
 
-- (void) updateMetas:(NSMutableArray*)arguments withDict:(NSMutableDictionary*)options
-{
 
-	NSUInteger argc = [arguments count];
+- (void)updateMetas:(CDVInvokedUrlCommand*)command
+
+{
 	
-	if (argc < 3) { // at a minimum we need artist, title and album...
-		return;	
-	}
-	
-	NSString *artist = [arguments objectAtIndex:1];
-	NSString *title = [arguments objectAtIndex:2];
-	NSString *album = [arguments objectAtIndex:3];
-    
-	
-  if (NSClassFromString(@"MPNowPlayingInfoCenter"))  {
+	NSString *artist = [command.arguments objectAtIndex:1];
+	NSString *title = [command.arguments objectAtIndex:2];
+	NSString *album = [command.arguments objectAtIndex:3];
     
     MPNowPlayingInfoCenter *infoCenter = [MPNowPlayingInfoCenter defaultCenter];
     infoCenter.nowPlayingInfo = [NSDictionary dictionaryWithObjectsAndKeys:
                                  artist, MPMediaItemPropertyArtist,
                                  title, MPMediaItemPropertyTitle,
                                  album, MPMediaItemPropertyAlbumTitle,
+                                 [[MPMediaItemArtwork alloc] initWithImage:[UIImage imageNamed:@"albumart.png"]], MPMediaItemPropertyArtwork,
                                  nil];
-  }
     
 }
 
