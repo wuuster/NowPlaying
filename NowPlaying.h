@@ -1,9 +1,7 @@
 //
 // NowPlaying.h
-// Now Playing Cordova Plugin
-//
-// Created by François LASSERRE on 12/05/13.
-// Copyright 2013 François LASSERRE. All rights reserved.
+// Now Playing Cordova Plugin Version 2
+// Created by Koiwu Beyan on 11/14/2013.
 // MIT Licensed
 //
 
