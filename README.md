@@ -3,6 +3,8 @@ NowPlaying V2
 
 PhoneGap / Cordova iOS plugin that allows you to add metadatas in NowPlayingInfoCenter (MPNowPlayingInfoCenter) to your app
 
+Find Version 1 here: https://github.com/ChoiZ/NowPlaying
+
 Require
 -------
 
