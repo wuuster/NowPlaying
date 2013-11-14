@@ -1,7 +1,7 @@
 //
 //  NowPlaying.js
 //	Now Playing Cordova Plugin
-//
+//	Update by Koiwu Beyan
 //	Created by François LASSERRE on 12/05/13.
 //	Copyright 2013 François LASSERRE. All rights reserved.
 //  MIT Licensed
