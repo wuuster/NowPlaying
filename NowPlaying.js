@@ -15,8 +15,8 @@
 	/**
 	 * Update metadatas.
 	 */
-	NowPlaying.prototype.updateMetas = function(artist,title,album,cover) {
-		cordovaRef.exec(null, null, "NowPlaying", "updateMetas", [artist,title,album,cover]);
+	NowPlaying.prototype.updateMetas = function(artist,title,album) {
+		cordovaRef.exec(null, null, "NowPlaying", "updateMetas", [artist,title,album]);
 	};
 	
 	cordovaRef.addConstructor(function(){
