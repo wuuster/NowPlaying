@@ -1,6 +1,6 @@
-NowPlaying V2 (by Koiwu Beyan)
+NowPlaying V2 
 ==========
-
+Koiwu Beyan
 PhoneGap / Cordova iOS plugin that allows you to add metadatas in NowPlayingInfoCenter (MPNowPlayingInfoCenter) to your app
 
 Find Version 1 (by François LASSERRE) here: https://github.com/ChoiZ/NowPlaying
