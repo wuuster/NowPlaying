@@ -26,7 +26,7 @@
                                  artist, MPMediaItemPropertyArtist,
                                  title, MPMediaItemPropertyTitle,
                                  album, MPMediaItemPropertyAlbumTitle,
-                                 [[MPMediaItemArtwork alloc] initWithImage:[UIImage imageNamed:@"albumart.png"]], MPMediaItemPropertyArtwork,
+                                 //[[MPMediaItemArtwork alloc] initWithImage:[UIImage imageNamed:@"albumart.png"]], MPMediaItemPropertyArtwork,
                                  nil];
     
 }
